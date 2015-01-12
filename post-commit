@@ -6,4 +6,4 @@ Author=$GIT_COMMITTER_NAME
 Date=$GIT_COMMITTER_DATE
 UniqueSeparator="unique_separator_1_2343fd"
 
-"C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\DebugEmailSender.exe" $MESSAGE $UniqueSeparator $AuthorEmail $UniqueSeparator $Author $UniqueSeparator $Date 
+"C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe" $MESSAGE $UniqueSeparator $AuthorEmail $UniqueSeparator $Author $UniqueSeparator $Date 
