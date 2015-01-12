@@ -1,0 +1,1 @@
+C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe.config
