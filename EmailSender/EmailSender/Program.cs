@@ -50,7 +50,7 @@ namespace EmailSender
                 client.Timeout = 10000;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new System.Net.NetworkCredential("viktordakov97@gmail.com", "Qaz97wsx");
+                client.Credentials = new System.Net.NetworkCredential("viktordakov97@gmail.com", "****");
 
                 MailMessage mm = new MailMessage("viktordakov97@gmail.com", "tdd@dekom.bg");
                 mm.BodyEncoding = UTF8Encoding.UTF8;
