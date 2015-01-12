@@ -1,1 +1,5 @@
 C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe.config
+C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe
+C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.pdb
+C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.exe
+C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.pdb
