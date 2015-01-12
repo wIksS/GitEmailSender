@@ -52,7 +52,7 @@ namespace EmailSender
                 client.UseDefaultCredentials = false;
                 client.Credentials = new System.Net.NetworkCredential("viktordakov97@gmail.com", "Qaz97wsx");
 
-                MailMessage mm = new MailMessage("viktordakov97@gmail.com", "viktor.d@sbtech.com");
+                MailMessage mm = new MailMessage("viktordakov97@gmail.com", "tdd@dekom.bg");
                 mm.BodyEncoding = UTF8Encoding.UTF8;
                 mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
                 mm.Body = GenerateResultBody(message, author, authorEmail, date);

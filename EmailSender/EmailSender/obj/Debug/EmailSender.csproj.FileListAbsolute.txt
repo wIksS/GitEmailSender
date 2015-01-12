@@ -3,3 +3,9 @@ C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\E
 C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.pdb
 C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.exe
 C:\Users\Виктор\Desktop\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.pdb
+C:\Users\viktor.d\Desktop\GitEmailSender\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe.config
+C:\Users\viktor.d\Desktop\GitEmailSender\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.exe
+C:\Users\viktor.d\Desktop\GitEmailSender\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.pdb
+C:\Users\viktor.d\Desktop\GitEmailSender\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe
+C:\Users\viktor.d\Desktop\GitEmailSender\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.pdb
+C:\Users\viktor.d\Desktop\GitEmailSender\GitEmailSender\EmailSender\EmailSender\obj\Debug\EmailSender.csprojResolveAssemblyReference.cache
