@@ -67,7 +67,7 @@ namespace EmailSender
         {
             StringBuilder resultBody = new StringBuilder();
             resultBody.Append(String.Format("<h1>{0} ({1}) pushed to your repository</h1>", authorEmail, author));
-            resultBody.Append(String.Format("<h3>Commit message :</h3><p>{0}</p><p>Commited on : {1}</p>", message, date != null ? date.ToString() : DateTime.Now.ToString()));
+            resultBody.Append(String.Format("<h3>Commit message :</h3><p>{0}</p><p>Commited on : {1}</p>", message, !String.IsNullOrEmpty(date.ToString()) ? date.ToString() : DateTime.Now.ToString()));
 
             return resultBody.ToString();
         }
