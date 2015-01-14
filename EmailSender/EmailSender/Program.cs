@@ -11,6 +11,7 @@ namespace EmailSender
     {
         static void Main(string[] args)
         {
+            int test;
             const string UniqueSeparator = "unique_separator_1_2343fd";
 
             if (args.Length > 0)
