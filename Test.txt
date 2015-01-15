@@ -1,4 +1,4 @@
-#!/bin/bash
+fds#!/bin/bash
 
 MESSAGE=$(git log -1 HEAD --pretty=format:%s)
 AuthorEmail=$GIT_AUTHOR_EMAIL
