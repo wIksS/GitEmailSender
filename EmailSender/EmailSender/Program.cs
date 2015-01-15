@@ -16,11 +16,11 @@ namespace EmailSender
 
             if (args.Length > 0)
             {
+                StringBuilder commitId = new StringBuilder();
                 StringBuilder message = new StringBuilder();
                 StringBuilder author = new StringBuilder();
                 StringBuilder authorEmail = new StringBuilder();
                 StringBuilder date = new StringBuilder();
-                StringBuilder commitId = new StringBuilder();
 
                 int argumentIndex = 1;
 
@@ -33,15 +33,15 @@ namespace EmailSender
                     }
                     switch (argumentIndex)
                     {
-                        case 1: message.Append(argument + " ");
+                        case 1: commitId.Append(argument + " ");
                             break;
-                        case 2: authorEmail.Append(argument + " ");
+                        case 2: message.Append(argument + " ");
                             break;
-                        case 3: author.Append(argument + " ");
+                        case 3: authorEmail.Append(argument + " ");
                             break;
-                        case 4: date.Append(argument + " ");
+                        case 4: author.Append(argument + " ");
                             break;
-                        case 5: commitId.Append(argument + " ");
+                        case 5: date.Append(argument + " ");
                             break;
                         default:
                             break;
