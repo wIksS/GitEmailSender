@@ -11,6 +11,7 @@ namespace EmailSender
     {
         static void Main(string[] args)
         {
+            const string Url = "http://stash.gtech.local:7990/projects/SB/repos/dev/commits/";
             const string UniqueSeparator = "unique_separator_1_2343fd";
 
             if (args.Length > 0)
@@ -19,6 +20,8 @@ namespace EmailSender
                 StringBuilder author = new StringBuilder();
                 StringBuilder authorEmail = new StringBuilder();
                 StringBuilder date = new StringBuilder();
+                StringBuilder commitId = new StringBuilder();
+
                 int argumentIndex = 1;
 
                 foreach (var argument in args)
@@ -38,6 +41,8 @@ namespace EmailSender
                             break;
                         case 4: date.Append(argument + " ");
                             break;
+                        case 5: commitId.Append(argument + " ");
+                            break;
                         default:
                             break;
                     }
@@ -55,7 +60,9 @@ namespace EmailSender
                 MailMessage mm = new MailMessage("viktordakov97@gmail.com", "tdd@dekom.bg");
                 mm.BodyEncoding = UTF8Encoding.UTF8;
                 mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-                mm.Body = GenerateResultBody(message, author, authorEmail, date);
+
+                mm.Body = GenerateResultBody(Url, message, author, authorEmail, date,commitId);
+
                 mm.Subject = String.Format("{0} ({1}) pushed to your repository", authorEmail, author);
                 mm.IsBodyHtml = true;
 
@@ -63,11 +70,11 @@ namespace EmailSender
             }
         }
 
-        private static string GenerateResultBody(StringBuilder message, StringBuilder author, StringBuilder authorEmail, StringBuilder date)
+        private static string GenerateResultBody(string url, StringBuilder message, StringBuilder author, StringBuilder authorEmail, StringBuilder date,StringBuilder commitId)
         {
             StringBuilder resultBody = new StringBuilder();
             resultBody.Append(String.Format("<h1>{0} ({1}) pushed to your repository</h1>", authorEmail, author));
-            resultBody.Append(String.Format("<h3>Commit message :</h3><p>{0}</p><p>Commited on : {1}</p>", message, !String.IsNullOrEmpty(date.ToString()) ? date.ToString() : DateTime.Now.ToString()));
+            resultBody.Append(String.Format("<h3>Commit message :</h3><p>{0}</p><p>CommitId : {2}</p><p>Commit : {3}</p><p>Commited on : {1}</p>", message, !String.IsNullOrEmpty(date.ToString()) ? date.ToString() : DateTime.Now.ToString(),commitId.ToString(),url + commitId));
 
             return resultBody.ToString();
         }
