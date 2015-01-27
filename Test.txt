@@ -5,6 +5,6 @@ AuthorEmail=$GIT_AUTHOR_EMAIL
 Author=$GIT_COMMITTER_NAME
 Date=$GIT_COMMITTER_DATE
 UniqueSeparator="unique_separator_1_2343fd" 
-$CommitId = $(git rev-parse HEAD)sss
+$CommitId = $(git rev-parse HEAD)ssss
 
 "C:\Users\viktor.d\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe" $MESSAGE $UniqueSeparator $AuthorEmail $UniqueSeparator $Author $UniqueSeparator $Date 
