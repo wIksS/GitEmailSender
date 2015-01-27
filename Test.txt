@@ -1,10 +1,10 @@
-fds#!/bin/bash
+sfds#!/bin/bash
 
 MESSAGE=$(git log -1 HEAD --pretty=format:%s)
 AuthorEmail=$GIT_AUTHOR_EMAIL
 Author=$GIT_COMMITTER_NAME
 Date=$GIT_COMMITTER_DATE
 UniqueSeparator="unique_separator_1_2343fd" 
-$CommitId = $(git rev-parse HEAD)ss
+$CommitId = $(git rev-parse HEAD)sss
 
 "C:\Users\viktor.d\Desktop\GitEmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe" $MESSAGE $UniqueSeparator $AuthorEmail $UniqueSeparator $Author $UniqueSeparator $Date 
